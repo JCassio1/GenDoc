@@ -1,0 +1,7 @@
+server/serverEnv
+
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+server/serverEnv
