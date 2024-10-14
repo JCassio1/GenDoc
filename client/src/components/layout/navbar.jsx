@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Sun } from 'lucide-react'
+import { ModeToggle } from '../ui/modeToggler'
 
 const Navbar = () => {
   return (
@@ -17,10 +17,7 @@ const Navbar = () => {
         <Button asChild>
           <Link href='/signup'>Create Account</Link>
         </Button>
-        <Button>
-          <Sun />
-        </Button>
-        {/* <ModeToggle /> */}
+        <ModeToggle />
       </div>
     </nav>
   )
