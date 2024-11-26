@@ -12,10 +12,10 @@ const Navbar = () => {
   const { theme } = useTheme()
 
   return (
-    <nav className='flex items-center justify-between p-4 bg-background'>
+    <nav className='flex items-center justify-between px-4 py-1 bg-background'>
       <div className='flex items-center'>
         <Link href='/' className='text-2xl font-bold text-foreground'>
-          <Image src={theme == 'dark' || 'system' ? logoDark : logoLight} width={100} height={100} alt='GenDoc Logo' />
+          <Image src={theme == 'dark' ? logoDark : logoLight} width={50} height={50} alt='GenDoc Logo' priority />
         </Link>
       </div>
       <div className='flex items-center space-x-4'>

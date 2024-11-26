@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           <Navbar />
           <main className='flex-grow'>{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>
