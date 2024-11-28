@@ -1,8 +1,6 @@
 import localFont from 'next/font/local'
 import './globals.css'
-import Navbar from '@/components/layout/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
-import Footer from '@/components/layout/footer'
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -25,9 +23,7 @@ export default function RootLayout({ children }) {
     <html lang='en' className='h-full'>
       <body className={`h-full flex flex-col ${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-          <Navbar />
           <main className='flex-grow'>{children}</main>
-          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>
