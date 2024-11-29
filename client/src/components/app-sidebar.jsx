@@ -23,9 +23,9 @@ import { Switch } from '@/components/ui/switch'
 // This is sample data
 const data = {
   user: {
-    name: 'shadcn',
+    name: 'Joselson Dias',
     email: 'm@example.com',
-    avatar: '/avatars/shadcn.jpg'
+    avatar: 'https://avatars.githubusercontent.com/u/20714698?v=4'
   },
   navMain: [
     {
