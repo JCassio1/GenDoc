@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/breadcrumb'
 import { Separator } from '@/components/ui/separator'
 import { SidebarInset, SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
+import { ModeToggle } from '../ui/modeToggler'
 
 export function Dashboard() {
   return (
@@ -33,6 +34,9 @@ export function Dashboard() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
+          <div className='ml-auto'>
+            <ModeToggle />
+          </div>
         </header>
         <div className='flex flex-1 flex-col gap-4 p-4'>
           {Array.from({ length: 24 }).map((_, index) => (
