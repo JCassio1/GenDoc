@@ -5,6 +5,7 @@ import { Button } from '../ui/button'
 import { Plus } from 'lucide-react'
 import { AppSidebar } from '../layout/app-sidebar'
 import { CreateNewTemplateButton } from '../ui/create-new-template-button'
+import { DynamicForm } from '../ui/dynamic-form'
 
 export function Dashboard() {
   return (
@@ -23,11 +24,7 @@ export function Dashboard() {
             <ModeToggle />
           </div>
         </header>
-        <div className='flex flex-1 flex-col gap-4 p-4'>
-          {Array.from({ length: 24 }).map((_, index) => (
-            <div key={index} className='aspect-video h-12 w-full rounded-lg bg-muted/50' />
-          ))}
-        </div>
+        <DynamicForm />
       </SidebarInset>
     </SidebarProvider>
   )
